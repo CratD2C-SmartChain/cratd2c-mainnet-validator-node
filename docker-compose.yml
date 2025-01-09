@@ -1,4 +1,3 @@
-version: '3.7'
 services:
   node:
     image: cratd2c/cratd2c_chain:node
