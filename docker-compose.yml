@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  node:
+    image: cratd2c/cratd2c_chain:node
+    volumes:
+      - ./node:/work/cratd2cchain
+      - ./genesis.json:/work/genesis.json
+    restart: always
+    network_mode: host
+    env_file:
+      - ./node.env
+    ports:
+      - '20303:20303'
+      - '8545:8545'
+      - '9555:9555'
