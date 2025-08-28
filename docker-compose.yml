@@ -1,6 +1,6 @@
 services:
   node:
-    image: cratd2c/cratd2c_chain:opcodes-fix
+    image: cratd2c/cratd2c_chain:fork 
     volumes:
       - ./node:/work/cratd2cchain
       - ./genesis.json:/work/genesis.json
